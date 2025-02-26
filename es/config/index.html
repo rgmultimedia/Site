@@ -11,7 +11,7 @@
 var opensdg = {
 
   // A base URL for asynchronous calls to SDG data.
-  remoteDataBaseUrl: 'https://open-sdg.org/open-sdg-data-starter/es',
+  remoteDataBaseUrl: 'https://rgmultimedia.github.io/Data/es',
 
   chartConfigAlterations: [],
   // A hook which can be used to modify the configuration for Chart.js.
@@ -140,7 +140,7 @@ var translations = {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link res="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" crossorigin="">
-        <link rel="stylesheet" href="/Site/assets/css/style.css?v=20250226111443">
+        <link rel="stylesheet" href="/Site/assets/css/style.css?v=20250226140829">
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css"
           integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
           crossorigin=""/>
@@ -552,7 +552,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('create_goals', {"previous_next_links":false,"goals":[]});
+        var currentValue = normalizeCurrentValue('create_goals', {"previous_next_links":false,"goal_content_heading":"","goals":[]});
         var propertyEditor = editor.getEditor('root.create_goals');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -690,8 +690,32 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.email_contacts'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('empty_metadata_placeholder', "");
+        var propertyEditor = editor.getEditor('root.empty_metadata_placeholder');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: empty_metadata_placeholder');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.empty_metadata_placeholder'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('empty_metadata_placeholder_sources', "");
+        var propertyEditor = editor.getEditor('root.empty_metadata_placeholder_sources');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: empty_metadata_placeholder_sources');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.empty_metadata_placeholder_sources'));
 
     
@@ -972,6 +996,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.hide_single_unit'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('ignored_disaggregations', []);
+        var propertyEditor = editor.getEditor('root.ignored_disaggregations');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: ignored_disaggregations');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.ignored_disaggregations'));
 
     
@@ -1166,6 +1202,18 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.metadata_tabs'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('meta_tags', []);
+        var propertyEditor = editor.getEditor('root.meta_tags');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: meta_tags');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.meta_tags'));
 
     
@@ -1182,11 +1230,23 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.news'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('observation_attributes', []);
+        var propertyEditor = editor.getEditor('root.observation_attributes');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: observation_attributes');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.observation_attributes'));
 
     
       try {
-        var currentValue = normalizeCurrentValue('progress_status', {"status_heading":"","status_types":[]});
+        var currentValue = normalizeCurrentValue('progress_status', {"status_heading":"","status_help":"","status_types":[]});
         var propertyEditor = editor.getEditor('root.progress_status');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1198,13 +1258,37 @@ data-event-label="high"
       }
     propertyEditorAccessibilityFixes(editor.getEditor('root.progress_status'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('progressive_web_app', {"enabled":false,"name":"","short_name":"","precaching":false});
+        var propertyEditor = editor.getEditor('root.progressive_web_app');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: progressive_web_app');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.progressive_web_app'));
 
+    
+      try {
+        var currentValue = normalizeCurrentValue('proxy_indicators', {"label":"","description":""});
+        var propertyEditor = editor.getEditor('root.proxy_indicators');
+        propertyEditor.setValue(null);
+        propertyEditor.setValue(currentValue);
+        
+      }
+      catch (e) {
+        console.log(e.message);
+        console.log('Unable to set config key: proxy_indicators');
+      }
     propertyEditorAccessibilityFixes(editor.getEditor('root.proxy_indicators'));
 
     
       try {
-        var currentValue = normalizeCurrentValue('remote_data_prefix', "https://open-sdg.org/open-sdg-data-starter");
+        var currentValue = normalizeCurrentValue('remote_data_prefix', "https://rgmultimedia.github.io/Data/");
         var propertyEditor = editor.getEditor('root.remote_data_prefix');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1230,7 +1314,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('reporting_status', {"title":"status.reporting_status","description":"status.description","disaggregation_tabs":false,"status_types":[{"value":"complete","label":"status.reported_online","hide_on_goal_pages":false},{"value":"notstarted","label":"status.no_data_available","hide_on_goal_pages":false},{"value":"notapplicable","label":"status.not_applicable","hide_on_goal_pages":false}]});
+        var currentValue = normalizeCurrentValue('reporting_status', {"title":"status.reporting_status","description":"status.description","disaggregation_indicator_count_label":"","disaggregation_tabs":false,"status_types":[{"value":"complete","label":"status.reported_online","hide_on_goal_pages":false},{"value":"notstarted","label":"status.no_data_available","hide_on_goal_pages":false},{"value":"notapplicable","label":"status.not_applicable","hide_on_goal_pages":false}]});
         var propertyEditor = editor.getEditor('root.reporting_status');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1244,7 +1328,7 @@ data-event-label="high"
 
     
       try {
-        var currentValue = normalizeCurrentValue('repository_url_data', "https://github.com/open-sdg/open-sdg-data-starter");
+        var currentValue = normalizeCurrentValue('repository_url_data', "https://github.com/rgmultimedia/Data");
         var propertyEditor = editor.getEditor('root.repository_url_data');
         propertyEditor.setValue(null);
         propertyEditor.setValue(currentValue);
@@ -1482,12 +1566,12 @@ data-event-label="high"
 <script>translations['search'] = translations['search'] || {};
     translations['search']['search'] = 'Buscar';</script>
 
-<script src='/Site/assets/js/sdg.js?v=20250226111443'></script>
+<script src='/Site/assets/js/sdg.js?v=20250226140829'></script>
 
 
     
     
-    <script src="/Site/assets/js/custom.js?v=20250226111443"></script><script>
+    <script src="/Site/assets/js/custom.js?v=20250226140829"></script><script>
     new indicatorInit();
     new accessibilitySwitcher();
 </script>
