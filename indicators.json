@@ -1931,7 +1931,7 @@
           "description": "",
           "keywords": "",
           "href": "/Site/17-1-1/",
-          "status": "notstarted"
+          "status": "complete"
         },
         {
           "id": "17-1-2",
@@ -2116,6 +2116,38 @@
           "keywords": "",
           "href": "/Site/17-19-2/",
           "status": "notstarted"
+        }]
+    }
+  },
+  {
+    "goal": {
+      "id": "Indicator_17",
+      "title": "global_goals.Indicator_17-title",
+      "indicators": [
+        
+        {
+          "id": "Indicator_17-1-2",
+          "title": "global_indicators.Indicator_17-1-2-title",
+          "description": "",
+          "keywords": "",
+          "href": "/Site/Indicator_17-1-2/",
+          "status": "complete"
+        },
+        {
+          "id": "Indicator_17-2-1",
+          "title": "global_indicators.Indicator_17-2-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/Site/Indicator_17-2-1/",
+          "status": "complete"
+        },
+        {
+          "id": "Indicator_17-6-1",
+          "title": "global_indicators.Indicator_17-6-1-title",
+          "description": "",
+          "keywords": "",
+          "href": "/Site/Indicator_17-6-1/",
+          "status": "complete"
         }]
     }
   }]
